@@ -1,20 +1,15 @@
 ## Trabajo práctico final de la asignatura DCI ##
 Este repositorio contiene el trabajo práctico final para la asignatura de Diseño de Circuitos Impresos de la carrera de posgrado de FIUBA.
 
-* Autor: XXXXCOMPLETARXXXX
-* Título corto del trabajo:  XXXXCOMPLETARXXXX
-* Descripción:  XXXXCOMPLETARXXXX
+* Autor: Ignacio Moya
+* Título corto del trabajo:  Poncho MAX9924 para EDU-CIAA 
+* Descripción:  Poncho para el circuito integrado MAX9924, que funciona como interface para sensores de reluctancia variable.
 
 
 ## Licencia de este trabajo ##
-XXXMENCIONAR ACÁ LA LICENCIAXXX (Editar este párrafo) 
-Y además colcar el archivo de texto de la misma en el directorio raíz.
-Para este TP se pide que la licencia sea de hardware abierto.
-Ver la sección "What license should I use?": https://www.oshwa.org/faq/
+GPL http://www.gnu.org/licenses/gpl-3.0.html
 
-## Estructura del TP FINAL ##
-
-Se propone y se pide utilizar la siguiente estructura.
+## Estructura del repositorio ##
 
 * doc: Toda la información sobre el circuito, principalmente de autoría o procesamiento propio. Por ejemplo:
   * Notas de ingeniería propias.
@@ -30,10 +25,3 @@ Se propone y se pide utilizar la siguiente estructura.
   * Info de productos comerciales.
   * Info en internet.
 * pcb: Archivos de diseño esquemático y pcb.
-
-Dependiendo la magnitud del proyecto, tendremos más o menos información en estos directorios. 
-Revisar los README.md en cada directorio para conocer las pautas de cada uno para este TP.
-
-NOTA: El alumno puede y debe borrar de este archivo todo lo que considere necesario, por ejemplo las aclaraciones del docente y esta misma nota.
-
-
