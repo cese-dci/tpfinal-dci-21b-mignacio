@@ -14,28 +14,6 @@ Comment3 "Autor: Ignacio Moya"
 Comment4 ""
 $EndDescr
 $Comp
-L Poncho_Esqueleto:Conn_Poncho2P_2x_20x2 XA1
-U 1 1 60EA4A8B
-P 2050 4650
-F 0 "XA1" H 2400 5100 60  0000 C CNN
-F 1 "Conn_Poncho2P_2x_20x2" H 2400 2900 60  0000 C CNN
-F 2 "Poncho_Esqueleto:Conn_Poncho_Mediano" H 2050 4650 60  0001 C CNN
-F 3 "" H 2050 4650 60  0000 C CNN
-	1    2050 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Poncho_Esqueleto:Conn_Poncho2P_2x_20x2 XA1
-U 2 1 60EA5F6F
-P 3850 4650
-F 0 "XA1" H 4200 5100 60  0000 C CNN
-F 1 "Conn_Poncho2P_2x_20x2" H 4200 2950 60  0000 C CNN
-F 2 "Poncho_Esqueleto:Conn_Poncho_Mediano" H 3850 4650 60  0001 C CNN
-F 3 "" H 3850 4650 60  0000 C CNN
-	2    3850 4650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R1
 U 1 1 60EC8D71
 P 1800 1350
@@ -243,18 +221,6 @@ F 3 "~" H 3650 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MAX9924-27:MAX9924 U1
-U 1 1 60F1B980
-P 4400 2450
-F 0 "U1" H 4400 3115 50  0000 C CNN
-F 1 "MAX9924" H 4400 3024 50  0000 C CNN
-F 2 "umax:UMAX10" H 4400 2450 50  0001 C CNN
-F 3 "https://www.maximintegrated.com/en/products/interface/sensor-interface/MAX9924.html/product-details/tabs-1" H 4400 2450 50  0001 C CNN
-F 4 "MAXIM" H 4400 2450 50  0001 C CNN "Manufacturer"
-	1    4400 2450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Jumper:Jumper_3_Open JP2
 U 1 1 60F22D1F
 P 3150 2950
@@ -380,18 +346,6 @@ F 1 "10K 1%" V 6450 2200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6390 2190 50  0001 C CNN
 F 3 "~" H 6350 2200 50  0001 C CNN
 	1    6350 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L MAX9000:MAX9000 U2
-U 1 1 610BCF5D
-P 8900 2100
-F 0 "U2" H 8900 2565 50  0000 C CNN
-F 1 "MAX9000" H 8900 2474 50  0000 C CNN
-F 2 "umax:UMAX8" H 8950 2100 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX9000-MAX9005.pdf" H 8950 2100 50  0001 C CNN
-F 4 "MAXIM" H 8900 2100 50  0001 C CNN "Manufacturer"
-	1    8900 2100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -611,17 +565,6 @@ F 1 "10K" V 6300 3050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6240 3040 50  0001 C CNN
 F 3 "~" H 6200 3050 50  0001 C CNN
 	1    6200 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L custom_jumpers:jumper_4_open JP5
-U 1 1 610B4D80
-P 5550 2450
-F 0 "JP5" V 5400 2500 50  0000 L CNN
-F 1 "jumper_4_open" H 5600 2000 50  0001 C CNN
-F 2 "misc:PinHeader_1x03_1x01_P2.54mm_Vertical" H 5550 2450 50  0001 C CNN
-F 3 "" H 5550 2450 50  0001 C CNN
-	1    5550 2450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1341,5 +1284,60 @@ F 2 "" H 5650 1700 50  0001 C CNN
 F 3 "" H 5650 1700 50  0001 C CNN
 	1    5650 1700
 	1    0    0    -1  
+$EndComp
+$Comp
+L Poncho_Esqueleto:Conn_Poncho2P_2x_20x2 XA1
+U 1 1 6102D304
+P 2050 4650
+F 0 "XA1" H 2400 5197 60  0000 C CNN
+F 1 "Conn_Poncho2P_2x_20x2" H 2400 5091 60  0000 C CNN
+F 2 "Poncho_Esqueleto:Conn_Poncho_Mediano" H 2050 4650 60  0001 C CNN
+F 3 "" H 2050 4650 60  0000 C CNN
+	1    2050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Poncho_Esqueleto:Conn_Poncho2P_2x_20x2 XA1
+U 2 1 610301F5
+P 3850 4650
+F 0 "XA1" H 4200 5197 60  0000 C CNN
+F 1 "Conn_Poncho2P_2x_20x2" H 4200 5091 60  0000 C CNN
+F 2 "Poncho_Esqueleto:Conn_Poncho_Mediano" H 3850 4650 60  0001 C CNN
+F 3 "" H 3850 4650 60  0000 C CNN
+	2    3850 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX9924-27:MAX9924 U1
+U 1 1 610364C6
+P 4400 2450
+F 0 "U1" H 4400 3115 50  0000 C CNN
+F 1 "MAX9924" H 4400 3024 50  0000 C CNN
+F 2 "max9924:SOP50P490X110-10N" H 4400 2450 50  0001 C CNN
+F 3 "" H 4400 2450 50  0001 C CNN
+	1    4400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX9000:MAX9000 U2
+U 1 1 6103892E
+P 8900 2100
+F 0 "U2" H 8900 2565 50  0000 C CNN
+F 1 "MAX9000" H 8900 2474 50  0000 C CNN
+F 2 "max9000:SOP65P490X110-8N" H 8950 2100 50  0001 C CNN
+F 3 "" H 8950 2100 50  0001 C CNN
+	1    8900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_jumpers:jumper_4_open J3
+U 1 1 6103959C
+P 5550 2450
+F 0 "J3" V 5600 2300 50  0000 L CNN
+F 1 "jumper_4_open" H 5600 2000 50  0001 C CNN
+F 2 "misc:PinHeader_1x03_1x01_P2.54mm_Vertical" H 5550 2445 50  0001 C CNN
+F 3 "" H 5550 2445 50  0001 C CNN
+	1    5550 2450
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

@@ -1,4 +1,6 @@
 (sym_lib_table
-  (lib (name MAX9924-27)(type Legacy)(uri ${KIPRJMOD}/MAX9924-27.lib)(options "")(descr ""))
-  (lib (name MAX9000)(type Legacy)(uri ${KIPRJMOD}/MAX9000.lib)(options "")(descr ""))
+  (lib (name MAX9924-27)(type Legacy)(uri ${KIPRJMOD}/libs/MAX9924-27.lib)(options "")(descr ""))
+  (lib (name MAX9000)(type Legacy)(uri ${KIPRJMOD}/libs/MAX9000.lib)(options "")(descr ""))
+  (lib (name Poncho_Esqueleto)(type Legacy)(uri ${KIPRJMOD}/libs/libPonchos/Poncho_Esqueleto.lib)(options "")(descr ""))
+  (lib (name custom_jumpers)(type Legacy)(uri ${KIPRJMOD}/libs/custom_jumpers.lib)(options "")(descr ""))
 )

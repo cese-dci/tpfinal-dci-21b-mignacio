@@ -1,5 +1,6 @@
 (fp_lib_table
-  (lib (name umax)(type KiCad)(uri ${KIPRJMOD}/umax.pretty)(options "")(descr ""))
-  (lib (name Poncho_Esqueleto)(type KiCad)(uri ${KIPRJMOD}/Poncho_Esqueleto.pretty)(options "")(descr ""))
-  (lib (name misc)(type KiCad)(uri ${KIPRJMOD}/misc.pretty)(options "")(descr ""))
+  (lib (name Poncho_Esqueleto)(type KiCad)(uri ${KIPRJMOD}/libs/Poncho_Esqueleto.pretty)(options "")(descr ""))
+  (lib (name misc)(type KiCad)(uri ${KIPRJMOD}/libs/misc.pretty)(options "")(descr ""))
+  (lib (name max9000)(type KiCad)(uri ${KIPRJMOD}/libs/max9000.pretty)(options "")(descr ""))
+  (lib (name max9924)(type KiCad)(uri ${KIPRJMOD}/libs/max9924.pretty)(options "")(descr ""))
 )
