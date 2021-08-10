@@ -1340,4 +1340,6 @@ F 3 "" H 5550 2445 50  0001 C CNN
 	1    5550 2450
 	0    1    1    0   
 $EndComp
+Text Notes 8400 6500 0    50   ~ 0
+NOTA 1: El pin 3 del integrado U1 esta etiquetado como "No Conectar"\n sin embargo en el esquemático está conectado a TP5 y R9. Esto está\n hecho así para respetar el diseño original del kit de evaluación que \nse está adaptando.
 $EndSCHEMATC
