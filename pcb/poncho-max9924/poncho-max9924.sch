@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Poncho MAX9924"
+Title "Poncho MAX9924: Interfaz para sensor de reluctancia variable"
 Date "2021-07-20"
 Rev "1"
 Comp ""
@@ -240,17 +240,6 @@ F 1 "1uF" H 3715 2905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3638 2800 50  0001 C CNN
 F 3 "~" H 3600 2950 50  0001 C CNN
 	1    3600 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR07
-U 1 1 60F4090E
-P 3600 3400
-F 0 "#PWR07" H 3600 3150 50  0001 C CNN
-F 1 "GND" H 3605 3227 50  0001 C CNN
-F 2 "" H 3600 3400 50  0001 C CNN
-F 3 "" H 3600 3400 50  0001 C CNN
-	1    3600 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -574,17 +563,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 3150 4250 3150
 Wire Wire Line
-	3600 3100 3600 3150
-Wire Wire Line
-	3850 3150 3600 3150
-Connection ~ 3850 3150
-Connection ~ 3600 3150
-Wire Wire Line
 	3400 2950 3450 2950
-Wire Wire Line
-	3450 2950 3450 3150
-Wire Wire Line
-	3450 3150 3600 3150
 Wire Wire Line
 	3150 2650 3150 2800
 Wire Wire Line
@@ -708,7 +687,7 @@ Wire Wire Line
 	8450 1150 10400 1150
 Wire Notes Line
 	11000 900  11000 3050
-Text Notes 9200 850  0    79   ~ 16
+Text Notes 7450 850  0    79   ~ 16
 Generador de onda triangular
 Wire Wire Line
 	8350 2550 9350 2550
@@ -738,17 +717,6 @@ Wire Wire Line
 Connection ~ 2700 1350
 Wire Wire Line
 	2700 1350 3000 1350
-$Comp
-L Connector:Screw_Terminal_01x02 J1
-U 1 1 61577878
-P 1200 1450
-F 0 "J1" H 1200 1200 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1118 1216 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1200 1450 50  0001 C CNN
-F 3 "~" H 1200 1450 50  0001 C CNN
-	1    1200 1450
-	-1   0    0    1   
-$EndComp
 Wire Notes Line
 	750  900  7300 900 
 Wire Notes Line
@@ -757,7 +725,7 @@ Wire Notes Line
 	7300 3600 750  3600
 Wire Notes Line
 	750  3600 750  900 
-Text Notes 6100 850  0    79   ~ 16
+Text Notes 750  850  0    79   ~ 16
 Contador de pulsos
 $Comp
 L power:+5V #PWR05
@@ -889,8 +857,6 @@ Connection ~ 4950 2050
 Wire Wire Line
 	5500 2050 5550 2050
 Wire Wire Line
-	5550 2050 5550 1650
-Wire Wire Line
 	5550 1350 5400 1350
 Wire Wire Line
 	5400 1650 5550 1650
@@ -899,7 +865,6 @@ Wire Wire Line
 	5550 1650 5550 1350
 Wire Wire Line
 	4900 2250 5250 2250
-Connection ~ 5550 2050
 Wire Wire Line
 	5550 2250 5550 2050
 Wire Wire Line
@@ -1086,7 +1051,7 @@ Wire Notes Line
 	5900 3950 1700 3950
 Wire Notes Line
 	1700 3950 1700 6750
-Text Notes 4600 3950 0    79   ~ 16
+Text Notes 1700 3900 0    79   ~ 16
 Conectores EDU-CIAA
 Wire Wire Line
 	4800 5850 5150 5850
@@ -1198,8 +1163,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 3300 2850 3400
 Wire Wire Line
-	3600 3150 3600 3400
-Wire Wire Line
 	1650 1350 1400 1350
 Wire Wire Line
 	1400 1450 1500 1450
@@ -1291,7 +1254,7 @@ U 1 1 6102D304
 P 2050 4650
 F 0 "XA1" H 2400 5197 60  0000 C CNN
 F 1 "Conn_Poncho2P_2x_20x2" H 2400 5091 60  0000 C CNN
-F 2 "Poncho_Esqueleto:Conn_Poncho_Mediano" H 2050 4650 60  0001 C CNN
+F 2 "Poncho_Esqueleto:Conn_Poncho_SinBorde" H 2050 4650 60  0001 C CNN
 F 3 "" H 2050 4650 60  0000 C CNN
 	1    2050 4650
 	1    0    0    -1  
@@ -1302,7 +1265,7 @@ U 2 1 610301F5
 P 3850 4650
 F 0 "XA1" H 4200 5197 60  0000 C CNN
 F 1 "Conn_Poncho2P_2x_20x2" H 4200 5091 60  0000 C CNN
-F 2 "Poncho_Esqueleto:Conn_Poncho_Mediano" H 3850 4650 60  0001 C CNN
+F 2 "Poncho_Esqueleto:Conn_Poncho_SinBorde" H 3850 4650 60  0001 C CNN
 F 3 "" H 3850 4650 60  0000 C CNN
 	2    3850 4650
 	1    0    0    -1  
@@ -1314,7 +1277,8 @@ P 4400 2450
 F 0 "U1" H 4400 3115 50  0000 C CNN
 F 1 "MAX9924" H 4400 3024 50  0000 C CNN
 F 2 "max9924:SOP50P490X110-10N" H 4400 2450 50  0001 C CNN
-F 3 "" H 4400 2450 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX9924-MAX9927.pdf" H 4400 2450 50  0001 C CNN
+F 4 "MAX9924UAUB+T" H 4400 2450 50  0001 C CNN "Digikey PN"
 	1    4400 2450
 	1    0    0    -1  
 $EndComp
@@ -1325,7 +1289,8 @@ P 8900 2100
 F 0 "U2" H 8900 2565 50  0000 C CNN
 F 1 "MAX9000" H 8900 2474 50  0000 C CNN
 F 2 "max9000:SOP65P490X110-8N" H 8950 2100 50  0001 C CNN
-F 3 "" H 8950 2100 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX9000-MAX9005.pdf" H 8950 2100 50  0001 C CNN
+F 4 "MAX9000ESA+" H 8900 2100 50  0001 C CNN "Digikey PN"
 	1    8900 2100
 	1    0    0    -1  
 $EndComp
@@ -1342,4 +1307,167 @@ F 3 "" H 5550 2445 50  0001 C CNN
 $EndComp
 Text Notes 8400 6500 0    50   ~ 0
 NOTA 1: El pin 3 del integrado U1 esta etiquetado como "No Conectar"\n sin embargo en el esquemático está conectado a TP5 y R9. Esto está\n hecho así para respetar el diseño original del kit de evaluación que \nse está adaptando.
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 61577878
+P 1200 1350
+F 0 "J1" H 1200 1100 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1118 1116 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1200 1350 50  0001 C CNN
+F 3 "~" H 1200 1350 50  0001 C CNN
+	1    1200 1350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 611C1239
+P 5650 2100
+F 0 "#PWR0103" H 5650 1850 50  0001 C CNN
+F 1 "GND" H 5655 1927 50  0001 C CNN
+F 2 "" H 5650 2100 50  0001 C CNN
+F 3 "" H 5650 2100 50  0001 C CNN
+	1    5650 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2050 5650 2050
+Wire Wire Line
+	5650 2050 5650 2100
+Connection ~ 5550 2050
+$Comp
+L power:GND #PWR0104
+U 1 1 611D3694
+P 3450 3200
+F 0 "#PWR0104" H 3450 2950 50  0001 C CNN
+F 1 "GND" H 3455 3027 50  0001 C CNN
+F 2 "" H 3450 3200 50  0001 C CNN
+F 3 "" H 3450 3200 50  0001 C CNN
+	1    3450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 611E15CE
+P 3850 3200
+F 0 "#PWR0105" H 3850 2950 50  0001 C CNN
+F 1 "GND" H 3855 3027 50  0001 C CNN
+F 2 "" H 3850 3200 50  0001 C CNN
+F 3 "" H 3850 3200 50  0001 C CNN
+	1    3850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3150 3850 3200
+Connection ~ 3850 3150
+Wire Wire Line
+	3450 2950 3450 3150
+Wire Wire Line
+	3450 3150 3600 3150
+Wire Wire Line
+	3600 3150 3600 3100
+Wire Wire Line
+	3450 3150 3450 3200
+Connection ~ 3450 3150
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 6123576E
+P 8450 4700
+F 0 "FID1" H 8535 4746 50  0000 L CNN
+F 1 "Fiducial" H 8535 4655 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 8450 4700 50  0001 C CNN
+F 3 "~" H 8450 4700 50  0001 C CNN
+	1    8450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 612361A2
+P 8950 4700
+F 0 "FID2" H 9035 4746 50  0000 L CNN
+F 1 "Fiducial" H 9035 4655 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 8950 4700 50  0001 C CNN
+F 3 "~" H 8950 4700 50  0001 C CNN
+	1    8950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 61236CC7
+P 8450 5150
+F 0 "FID3" H 8535 5196 50  0000 L CNN
+F 1 "Fiducial" H 8535 5105 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 8450 5150 50  0001 C CNN
+F 3 "~" H 8450 5150 50  0001 C CNN
+	1    8450 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 61284D9A
+P 8950 5150
+F 0 "FID4" H 9035 5196 50  0000 L CNN
+F 1 "Fiducial" H 9035 5105 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 8950 5150 50  0001 C CNN
+F 3 "~" H 8950 5150 50  0001 C CNN
+	1    8950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 612999F2
+P 7700 5150
+F 0 "H2" H 7800 5196 50  0000 L CNN
+F 1 "MountingHole" H 7800 5105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 7700 5150 50  0001 C CNN
+F 3 "~" H 7700 5150 50  0001 C CNN
+	1    7700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6129A8A0
+P 7700 4700
+F 0 "H1" H 7800 4746 50  0000 L CNN
+F 1 "MountingHole" H 7800 4655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 7700 4700 50  0001 C CNN
+F 3 "~" H 7700 4700 50  0001 C CNN
+	1    7700 4700
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7500 4500 7500 5500
+Wire Notes Line
+	7500 5500 9500 5500
+Wire Notes Line
+	9500 5500 9500 4500
+Wire Notes Line
+	9500 4500 7500 4500
+Text Notes 7500 4450 0    79   ~ 16
+Agujeros de montaje y fiduciales
+$Comp
+L power:GND #PWR0106
+U 1 1 612F5A06
+P 7700 5250
+F 0 "#PWR0106" H 7700 5000 50  0001 C CNN
+F 1 "GND" H 7705 5077 50  0000 C CNN
+F 2 "" H 7700 5250 50  0001 C CNN
+F 3 "" H 7700 5250 50  0001 C CNN
+	1    7700 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 5150 7700 5250
+$Comp
+L power:GND #PWR0107
+U 1 1 613109F1
+P 7700 4800
+F 0 "#PWR0107" H 7700 4550 50  0001 C CNN
+F 1 "GND" H 7705 4627 50  0000 C CNN
+F 2 "" H 7700 4800 50  0001 C CNN
+F 3 "" H 7700 4800 50  0001 C CNN
+	1    7700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4700 7700 4800
 $EndSCHEMATC
